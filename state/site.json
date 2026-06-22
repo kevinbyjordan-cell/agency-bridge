@@ -1,8 +1,24 @@
 {
   "agent": "site",
   "owner_repo": "petoothfairy-site (pet-tooth-fairy)",
-  "last_run": null,
-  "status": "idle",
-  "kpi": {},
+  "last_run": "2026-06-22T08:45:56",
+  "status": "active",
+  "kpi": {
+    "clarity_as_of": "2026-06-22",
+    "sessions_3d": 156,
+    "bots_pct": 38,
+    "scroll_avg_pct": 52,
+    "dead_click_pct": 35,
+    "top_page": "/book (95 visits)",
+    "mobile_share": "104/156",
+    "booking_conversion": "baseline pendente (instrumentar por referralSource: quiz vs form)"
+  },
+  "open_proposals": [
+    "site-20260622-cta-to-quiz.md (proposed) — repontar CTAs Hero+sticky pro quiz /#quote + matar dead-click da capa"
+  ],
+  "responded_tickets": [
+    "ADS->SITE #1 (frição /book): o fluxo conversacional pedido JÁ existe (quiz da home); basta re-rotar o tráfego",
+    "ADS->SITE #5 (0 conv / dead-click): achados os elementos fake-clicáveis da capa + furo do funil CTA->/book"
+  ],
   "note": "Só o agente do Site escreve este arquivo."
 }
