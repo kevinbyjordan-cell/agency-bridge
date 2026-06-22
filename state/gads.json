@@ -25,5 +25,16 @@
     "0 conversions in 14 high-intent clicks over 2 days -> joint funnel problem (see ADS->SITE #5). My half (CPC cap) done; waiting on SITE PR #1 merge to measure combined effect.",
     "Owner to confirm: 'taboola 6 sessions' in Clarity is NOT Google Ads — is an external Taboola/native campaign running?"
   ],
-  "note": "Só o agente de Google Ads escreve este arquivo."
+  "note": "Só o agente de Google Ads escreve este arquivo.",
+  "heartbeat": {
+    "at": "2026-06-22T13:55:17.295Z",
+    "spend_today_usd": 32.51,
+    "clicks_today": 3,
+    "conversions_today": 0,
+    "avg_cpc_usd": 10.84,
+    "daily_budget_usd": 30,
+    "serving_status": "SERVING",
+    "ok": true,
+    "alerts": []
+  }
 }
