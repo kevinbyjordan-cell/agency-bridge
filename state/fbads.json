@@ -1,9 +1,10 @@
 {
   "agent": "fbads",
-  "owner_repo": "FACEBOOK ADS (meta-ads-agent)",
+  "owner_repo": "FB-META-ADS (github.com/kevinbyjordan-cell/FB-META-ADS)",
   "last_run": "2026-06-22",
-  "status": "ready",
-  "campaign": "(nenhuma ainda — Fase 2 cria a primeira PAUSED)",
+  "status": "setup-in-progress",
+  "participa_do_bridge": false,
+  "campaign": "(nenhuma — entra no bridge só após config + 1ªs campanhas)",
   "kpi": {
     "spend_day_usd": 0,
     "spend_month_usd": 0,
@@ -32,5 +33,5 @@
     "ok": true,
     "alerts": []
   },
-  "note": "Execução via MCP oficial mcp.facebook.com/ads + Ads Manager. CLI própria = Fase 4 futura."
+  "note": "Agente Meta criado e EM CONFIGURAÇÃO no repo FB-META-ADS. NÃO rotear tickets para FB ainda. Entra de fato no bridge (heartbeat + tickets) só após concluir as configs e subir as 1ªs campanhas. Execução via MCP oficial mcp.facebook.com/ads + Ads Manager."
 }
