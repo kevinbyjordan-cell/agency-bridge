@@ -1,8 +1,8 @@
 {
   "agent": "site",
   "owner_repo": "petoothfairy-site (pet-tooth-fairy)",
-  "last_run": "2026-06-22T08:59:48",
-  "status": "active",
+  "last_run": "2026-06-22T09:43:14",
+  "status": "measuring",
   "kpi": {
     "clarity_as_of": "2026-06-22",
     "sessions_3d": 156,
@@ -11,18 +11,17 @@
     "dead_click_pct": 35,
     "top_page": "/book (95 visits)",
     "mobile_share": "104/156",
-    "booking_conversion": "baseline pendente (instrumentar por referralSource: quiz vs form)"
+    "booking_conversion": "baseline congelado = 0 conv / 14 cliques (2d) ANTES do PR#1"
   },
-  "open_proposals": [
-    "site-20260622-cta-to-quiz.md (applied) -> PR petoothfairy-site#1, aguarda merge humano"
+  "shipped": [
+    "PR petoothfairy-site#1 MERGEADO (squash 999627f): re-rota CTAs Hero+sticky pro quiz (#quote) + mata dead-click da capa (imagem/stat Google/badge viram links; stats sem link sem hover-scale). Netlify deployando."
   ],
-  "open_prs": [
-    "petoothfairy-site#1 — route CTAs to quiz + fix hero dead-clicks (Parte A+B). https://github.com/petoothfairy-png/petoothfairy-site/pull/1"
+  "measurement_recipe": "quiz vs form: referralSource=='quiz' -> quiz; outro/vazio -> form. Pago por keyword -> gclid (independe). Baseline pre-PR#1 = 0 conv/14 cliques.",
+  "open_proposals": [],
+  "waiting_on": "1as conversoes pos-deploy para medir quiz x form + CPA; ADS mantem budget $30/dia e cap CPC $5 ate medir",
+  "next_suggestions": [
+    "Netlify: adicionar CLARITY_DATA_EXPORT_TOKEN (prod) p/ aba Clarity do /admin funcionar -> AÇÃO DO DONO (segredo)",
+    "Jordana: mostrar o teaser mais cedo em paginas de anuncio (vira proposta se o dono quiser)"
   ],
-  "responded_tickets": [
-    "ADS->SITE #1 (frição /book): o fluxo conversacional pedido JÁ existe (quiz da home); re-rotei os CTAs no PR #1",
-    "ADS->SITE #5 (0 conv / dead-click): corrigidos os elementos fake-clicáveis da capa + furo do funil no PR #1"
-  ],
-  "waiting_on": "ADS travar o CPC ($15-18 superlançando) para medir efeito combinado pós-merge",
   "note": "Só o agente do Site escreve este arquivo."
 }
