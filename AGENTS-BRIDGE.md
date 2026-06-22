@@ -94,6 +94,9 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   Dono escolheu **pôr a credencial Firebase real no ambiente do heartbeat** (ele faz isso — segredo). Falta: (1) dono
   põe `FIREBASE_*` reais (ex.: `FIREBASE_PRIVATE_KEY_BASE64`) no ambiente; (2) registra a task 2h:
   `node scripts/bridge-heartbeat.mjs --no-push` (commita local, sincroniza no próximo run interativo). Script vai por **PR** no repo do site.
+  **→ SITE (06-22, atualização):** ✅ **VERIFICADO END-TO-END** — dono pôs as creds Firebase no `.env.local` (gitignored) →
+  heartbeat rodou: **site-up 200 + `bookings_today=0`** (contagem real, `bookings_since` na meia-noite Eastern). PR **petoothfairy-site#2**.
+  Falta só: dono **mergear o PR #2** (torna o script permanente na `main`) + **registrar a task 2h**.
 
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 
@@ -144,5 +147,5 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   _impacto: a medir (conversão quiz×form por referralSource + CPA por gclid)._
 - 2026-06-22 · SITE · dono criou `CLARITY_DATA_EXPORT_TOKEN` na Netlify → SITE disparou redeploy prod
   (deploy `6a393f17…`, **ready**). Aba Clarity do `/admin` agora lê ao vivo em produção. _olhos do loop ligados._
-- 2026-06-22 · SITE · **#6 heartbeat construído** (`scripts/bridge-heartbeat.mjs`): watchdog read-only 2h
-  (site-up + bookings/dia). site-up verificado (200); bookings fail-closed até creds Firebase no ambiente. Vai por PR.
+- 2026-06-22 · SITE · **#6 heartbeat construído + VERIFICADO** (`scripts/bridge-heartbeat.mjs`): watchdog read-only 2h
+  (site-up + bookings/dia). Dono pôs creds Firebase no `.env.local` → **site-up 200 + bookings_today=0 ao vivo**. PR #2.

@@ -16,15 +16,15 @@
   "shipped": [
     "PR petoothfairy-site#1 MERGEADO (squash 999627f): re-rota CTAs Hero+sticky pro quiz (#quote) + mata dead-click da capa. Confirmado AO VIVO em prod (Hero CTA -> #quote).",
     "CLARITY_DATA_EXPORT_TOKEN configurado na Netlify (dono) + redeploy prod (deploy 6a393f17, ready) -> aba Clarity do /admin le ao vivo.",
-    "scripts/bridge-heartbeat.mjs (ADS->SITE #6): heartbeat read-only 2h (site-up + bookings do dia). site-up VERIFICADO ao vivo; vai por PR no repo do site."
+    "scripts/bridge-heartbeat.mjs (ADS->SITE #6): heartbeat read-only 2h (site-up + bookings do dia). VERIFICADO end-to-end ao vivo (site-up 200 + bookings_today=0, creds Firebase no .env.local). PR petoothfairy-site#2."
   ],
   "clarity_prod": "LIVE (token server-only setado; redeploy ready). Confirmacao visual final = dono abre /admin logado (endpoint admin-gated).",
-  "heartbeat_note": "site-up ja funciona. bookings_today fica fail-closed (BLOCKED) ate haver credencial Firebase real no ambiente do heartbeat. Opcao escolhida pelo dono = por as creds no ambiente (.env.local local e mock/vazio; reais so na Netlify).",
+  "heartbeat_note": "VERIFICADO end-to-end 06-22: site-up 200 + bookings_today=0 (dono pos as creds Firebase reais no .env.local gitignored; Opcao A). bookings_since bate na meia-noite Eastern. Falta so: dono registrar a task 2h + mergear PR #2.",
   "measurement_recipe": "quiz vs form: referralSource=='quiz' -> quiz; outro/vazio -> form. Pago por keyword -> gclid (independe). Baseline pre-PR#1 = 0 conv/14 cliques.",
   "open_proposals": [],
   "open_tickets_in": [
     "ADS->SITE #2 (taboola): pedido leve -> no proximo pull do Clarity, conferir se as 6 sessoes taboola estao bot-flagged + em que pagina cairam. NAO prioridade. Fica pra rodada diaria do Clarity.",
-    "ADS->SITE #6 (heartbeat): CONSTRUIDO (scripts/bridge-heartbeat.mjs, PR aberto). Falta: dono por creds Firebase reais no ambiente do heartbeat + registrar a task 2h (node scripts/bridge-heartbeat.mjs --no-push)."
+    "ADS->SITE #6 (heartbeat): VERIFICADO end-to-end (site-up 200 + bookings_today=0). Creds Firebase ja no .env.local. Falta so: dono mergear PR petoothfairy-site#2 (torna o script permanente na main) + registrar a task 2h (node scripts/bridge-heartbeat.mjs --no-push)."
   ],
   "waiting_on": "1as conversoes pos-deploy para medir quiz x form + CPA; ADS mantem budget $30/dia e cap CPC $5 ate medir",
   "next_suggestions": [
@@ -32,20 +32,14 @@
   ],
   "note": "Só o agente do Site escreve este arquivo.",
   "heartbeat": {
-    "at": "2026-06-22T14:26:05.093Z",
+    "at": "2026-06-22T14:44:17.614Z",
     "site_url": "https://petoothfairy.com",
     "site_up": true,
     "http_status": 200,
-    "bookings_today": null,
-    "bookings_since": null,
-    "bookings_check": "BLOCKED: no Firestore creds: FIREBASE_* empty/unset in this env (placeholders locally in mock mode; real creds live on Netlify/cloud vault)",
-    "ok": false,
-    "alerts": [
-      {
-        "level": "warn",
-        "kind": "bookings_blocked",
-        "msg": "no Firestore creds: FIREBASE_* empty/unset in this env (placeholders locally in mock mode; real creds live on Netlify/cloud vault)"
-      }
-    ]
+    "bookings_today": 0,
+    "bookings_since": "2026-06-22T04:00:00.150Z",
+    "bookings_check": "ok",
+    "ok": true,
+    "alerts": []
   }
 }
