@@ -1,7 +1,7 @@
 {
   "agent": "site",
   "owner_repo": "petoothfairy-site (pet-tooth-fairy)",
-  "last_run": "2026-06-22T09:43:14",
+  "last_run": "2026-06-22T09:58:47",
   "status": "measuring",
   "kpi": {
     "clarity_as_of": "2026-06-22",
@@ -14,13 +14,17 @@
     "booking_conversion": "baseline congelado = 0 conv / 14 cliques (2d) ANTES do PR#1"
   },
   "shipped": [
-    "PR petoothfairy-site#1 MERGEADO (squash 999627f): re-rota CTAs Hero+sticky pro quiz (#quote) + mata dead-click da capa (imagem/stat Google/badge viram links; stats sem link sem hover-scale). Netlify deployando."
+    "PR petoothfairy-site#1 MERGEADO (squash 999627f): re-rota CTAs Hero+sticky pro quiz (#quote) + mata dead-click da capa. Confirmado AO VIVO em prod (Hero CTA -> #quote).",
+    "CLARITY_DATA_EXPORT_TOKEN configurado na Netlify (dono) + redeploy prod (deploy 6a393f17, ready) -> aba Clarity do /admin le ao vivo."
   ],
+  "clarity_prod": "LIVE (token server-only setado; redeploy ready). Confirmacao visual final = dono abre /admin logado (endpoint admin-gated).",
   "measurement_recipe": "quiz vs form: referralSource=='quiz' -> quiz; outro/vazio -> form. Pago por keyword -> gclid (independe). Baseline pre-PR#1 = 0 conv/14 cliques.",
   "open_proposals": [],
+  "open_tickets_in": [
+    "ADS->SITE #6: construir heartbeat read-only do SITE a cada 2h (deploy-up + nº bookings do dia via Firestore) -> state/site.json.heartbeat; NAO puxar Clarity (limite ~10/dia). Agendamento = dono registra. RECEBIDO, aguarda greenlight do dono."
+  ],
   "waiting_on": "1as conversoes pos-deploy para medir quiz x form + CPA; ADS mantem budget $30/dia e cap CPC $5 ate medir",
   "next_suggestions": [
-    "Netlify: adicionar CLARITY_DATA_EXPORT_TOKEN (prod) p/ aba Clarity do /admin funcionar -> AÇÃO DO DONO (segredo)",
     "Jordana: mostrar o teaser mais cedo em paginas de anuncio (vira proposta se o dono quiser)"
   ],
   "note": "Só o agente do Site escreve este arquivo."

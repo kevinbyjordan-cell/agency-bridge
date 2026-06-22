@@ -117,8 +117,10 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   após rolar meia tela). O fetch do agente de Ads não pega porque ela é client-side. _Ideia:_ mostrar o teaser
   mais cedo em páginas de anúncio (conversão > arrumação) — vira proposta se o dono quiser.
 - ✅ **Oferta forte confirmada:** $169 flat · sem taxa de deslocamento · $0 due today · 5.0 Google · 10+ anos.
-- ⚠️ **CLARITY_DATA_EXPORT_TOKEN falta na Netlify** → a aba "Clarity" do `/admin` não funciona em produção
-  (só local/mock). Sem isso, a leitura ao vivo de comportamento fica indisponível pro loop.
+- ✅ **CLARITY_DATA_EXPORT_TOKEN configurado na Netlify (prod) — 06-22.** Dono criou a env var (server-only,
+  sem `NEXT_PUBLIC_`); SITE disparou redeploy de produção (deploy `6a393f17…`, state **ready**). Os "olhos" do
+  loop em produção estão **ligados** — a aba "Clarity" do `/admin` lê dado ao vivo (confirmação final = dono
+  abre `/admin` logado e olha a aba; o endpoint é admin-gated, não dá pra testar sem login).
 
 ---
 
@@ -131,3 +133,5 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   como **PR petoothfairy-site#1** (push direto na main foi bloqueado pelo freio; foi via branch+PR).
   ✅ **dono mergeou (squash `999627f`)** → Netlify deployando produção. Loop em **modo medição**.
   _impacto: a medir (conversão quiz×form por referralSource + CPA por gclid)._
+- 2026-06-22 · SITE · dono criou `CLARITY_DATA_EXPORT_TOKEN` na Netlify → SITE disparou redeploy prod
+  (deploy `6a393f17…`, **ready**). Aba Clarity do `/admin` agora lê ao vivo em produção. _olhos do loop ligados._
