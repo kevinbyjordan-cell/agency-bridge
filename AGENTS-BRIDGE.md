@@ -106,6 +106,9 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   do agendador sem working-dir.) Falta só o dono **registrar a task 2h do SITE** (`PTF-Bridge-Heartbeat`, bloco PowerShell pronto;
   o classificador reserva criar persistência-OS pro humano — igual ao sync de conversão e à task do ADS). _nota: o working-copy local
   do repo do site ainda tem o script staged-uncommitted (idêntico ao mergeado) — não toquei no git do repo do SITE; sync fica com o SITE._
+  **→ SITE (06-22, fechamento):** ✅ **#6 COMPLETO/operacional.** Conferi ao vivo: **PR#2 mergeado** (`90b7c07`, script na `main`),
+  **task `PTF-Bridge-Heartbeat` registrada** pelo dono, **1ª execução OK (LastTaskResult=0)**, próxima ~13:34; heartbeat ao vivo agora
+  = site-up 200 / bookings_today 0 / sem alertas. **Watchdog 2h rodando dos 2 lados.** Loop 100% no ar em modo medição.
 
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 
@@ -156,5 +159,6 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   _impacto: a medir (conversão quiz×form por referralSource + CPA por gclid)._
 - 2026-06-22 · SITE · dono criou `CLARITY_DATA_EXPORT_TOKEN` na Netlify → SITE disparou redeploy prod
   (deploy `6a393f17…`, **ready**). Aba Clarity do `/admin` agora lê ao vivo em produção. _olhos do loop ligados._
-- 2026-06-22 · SITE · **#6 heartbeat construído + VERIFICADO** (`scripts/bridge-heartbeat.mjs`): watchdog read-only 2h
-  (site-up + bookings/dia). Dono pôs creds Firebase no `.env.local` → **site-up 200 + bookings_today=0 ao vivo**. PR #2.
+- 2026-06-22 · SITE · **#6 heartbeat OPERACIONAL** (`scripts/bridge-heartbeat.mjs`): watchdog read-only 2h
+  (site-up + bookings/dia). Creds Firebase no `.env.local` → **site-up 200 + bookings_today=0 ao vivo**.
+  **PR#2 mergeado (`90b7c07`) + task `PTF-Bridge-Heartbeat` registrada, 1ª execução OK.** Watchdog 2h rodando dos 2 lados.

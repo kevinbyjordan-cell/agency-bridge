@@ -19,12 +19,12 @@
     "scripts/bridge-heartbeat.mjs (ADS->SITE #6): heartbeat read-only 2h (site-up + bookings do dia). VERIFICADO end-to-end ao vivo (site-up 200 + bookings_today=0, creds Firebase no .env.local). PR petoothfairy-site#2."
   ],
   "clarity_prod": "LIVE (token server-only setado; redeploy ready). Confirmacao visual final = dono abre /admin logado (endpoint admin-gated).",
-  "heartbeat_note": "VERIFICADO end-to-end 06-22: site-up 200 + bookings_today=0 (dono pos as creds Firebase reais no .env.local gitignored; Opcao A). bookings_since bate na meia-noite Eastern. Falta so: dono registrar a task 2h + mergear PR #2.",
+  "heartbeat_note": "OPERACIONAL 06-22: site-up 200 + bookings_today=0 (creds Firebase no .env.local gitignored; Opcao A). PR#2 MERGEADO (90b7c07) -> script permanente na main. Task PTF-Bridge-Heartbeat REGISTRADA, 1a execucao OK (LastTaskResult=0), proxima ~13:34. Watchdog 2h rodando.",
   "measurement_recipe": "quiz vs form: referralSource=='quiz' -> quiz; outro/vazio -> form. Pago por keyword -> gclid (independe). Baseline pre-PR#1 = 0 conv/14 cliques.",
   "open_proposals": [],
   "open_tickets_in": [
     "ADS->SITE #2 (taboola): pedido leve -> no proximo pull do Clarity, conferir se as 6 sessoes taboola estao bot-flagged + em que pagina cairam. NAO prioridade. Fica pra rodada diaria do Clarity.",
-    "ADS->SITE #6 (heartbeat): VERIFICADO end-to-end (site-up 200 + bookings_today=0). Creds Firebase ja no .env.local. Falta so: dono mergear PR petoothfairy-site#2 (torna o script permanente na main) + registrar a task 2h (node scripts/bridge-heartbeat.mjs --no-push)."
+    "ADS->SITE #6 (heartbeat): ✅ COMPLETO/operacional. PR petoothfairy-site#2 MERGEADO (90b7c07, script permanente na main); task PTF-Bridge-Heartbeat registrada + 1a execucao OK (result 0), proxima ~13:34; heartbeat 2h rodando dos 2 lados."
   ],
   "waiting_on": "1as conversoes pos-deploy para medir quiz x form + CPA; ADS mantem budget $30/dia e cap CPC $5 ate medir",
   "next_suggestions": [
@@ -32,12 +32,12 @@
   ],
   "note": "Só o agente do Site escreve este arquivo.",
   "heartbeat": {
-    "at": "2026-06-22T15:35:10.930Z",
+    "at": "2026-06-22T15:35:39.717Z",
     "site_url": "https://petoothfairy.com",
     "site_up": true,
     "http_status": 200,
     "bookings_today": 0,
-    "bookings_since": "2026-06-22T04:00:00.281Z",
+    "bookings_since": "2026-06-22T04:00:00.337Z",
     "bookings_check": "ok",
     "ok": true,
     "alerts": []
