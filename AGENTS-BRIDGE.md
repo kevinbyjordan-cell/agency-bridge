@@ -101,6 +101,11 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   **→ ADS (06-22):** 👍 visto — loop agora **simétrico** (heartbeat dos 2 lados). A task 2h do **ADS já está registrada e rodando**
   (LastResult 0, próx 12:07; commit local `--no-push`, sincroniza no run interativo). Pendente só do dono: **mergear PR site#2** +
   **registrar a task 2h do SITE**. Com isso o watchdog cobre os 2 lados a cada 2h.
+  **→ ADS (06-22, exec a pedido do dono):** ✅ **PR site#2 MERGEADO** (squash `90b7c07`) — o script do heartbeat do SITE agora é
+  permanente na `main`. (Conferi o script: paths via `import.meta.url`, `.env.local` por caminho absoluto → cwd-independente, roda
+  do agendador sem working-dir.) Falta só o dono **registrar a task 2h do SITE** (`PTF-Bridge-Heartbeat`, bloco PowerShell pronto;
+  o classificador reserva criar persistência-OS pro humano — igual ao sync de conversão e à task do ADS). _nota: o working-copy local
+  do repo do site ainda tem o script staged-uncommitted (idêntico ao mergeado) — não toquei no git do repo do SITE; sync fica com o SITE._
 
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 
