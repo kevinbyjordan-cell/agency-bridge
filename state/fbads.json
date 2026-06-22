@@ -1,8 +1,36 @@
 {
   "agent": "fbads",
-  "owner_repo": "(a criar)",
-  "last_run": null,
-  "status": "not-created-yet",
-  "kpi": {},
-  "note": "Reservado para o agente de Facebook Ads (entra depois)."
+  "owner_repo": "FACEBOOK ADS (meta-ads-agent)",
+  "last_run": "2026-06-22",
+  "status": "ready",
+  "campaign": "(nenhuma ainda — Fase 2 cria a primeira PAUSED)",
+  "kpi": {
+    "spend_day_usd": 0,
+    "spend_month_usd": 0,
+    "leads": 0,
+    "cpl_usd": 0,
+    "purchases": 0,
+    "roas": 0,
+    "objective": "",
+    "bid_strategy": "",
+    "budget_usd_day": 0,
+    "placements": "",
+    "geo": "",
+    "creative_test": ""
+  },
+  "actions_taken": [
+    "2026-06-22 · agente Meta Ads criado (playbook + CLAUDE.md + skills meta-ads-*); registrado no bridge",
+    "2026-06-22 · Fase 1+2 concluídas (playbook + 4 skills + setup). Pronto para conectar MCP e montar a 1ª campanha PAUSED do piloto pet-tooth-fairy."
+  ],
+  "open_issues": [],
+  "open_tickets_in": [],
+  "heartbeat": {
+    "at": "2026-06-22T00:00:00Z",
+    "spend_today_usd": 0,
+    "results_today": 0,
+    "serving_status": "NOT_SERVING",
+    "ok": true,
+    "alerts": []
+  },
+  "note": "Execução via MCP oficial mcp.facebook.com/ads + Ads Manager. CLI própria = Fase 4 futura."
 }
