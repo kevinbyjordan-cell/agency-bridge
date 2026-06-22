@@ -9,7 +9,8 @@
     "spend_06_22_usd": 33,
     "clicks_2d": 14,
     "conversions_2d": 0,
-    "avg_cpc_usd": 16,
+    "avg_cpc_usd_before_cap": 16,
+    "bidding_strategy": "MAXIMIZE_CLICKS (max CPC $5.00) — applied 06-22, was MAXIMIZE_CONVERSIONS",
     "budget_usd_day": 30,
     "search_terms_relevance": "100% relevant (0 junk)",
     "ad_destination": "home (petoothfairy.com/)",
@@ -17,9 +18,12 @@
     "geo": "10 FL cities",
     "negatives": 53
   },
+  "actions_taken": [
+    "2026-06-22 · capped CPC: switched bidding MAXIMIZE_CONVERSIONS -> MAXIMIZE_CLICKS with $5.00 cpc_bid_ceiling (via gads-cli campaign bidding, dry-run+gated apply). Stops the $15-18 overbid; gathers cheap clicks while SITE PR #1 fixes the funnel. Phase 2: back to Maximize Conversions/tCPA after ~30 real bookings."
+  ],
   "open_issues": [
-    "CPC $15-18 too high (Maximize Conversions overbidding on a new campaign with ~0 conversion history) -> propose CPC cap",
-    "0 conversions in 14 high-intent clicks over 2 days -> joint funnel problem (see ADS->SITE #5)"
+    "0 conversions in 14 high-intent clicks over 2 days -> joint funnel problem (see ADS->SITE #5). My half (CPC cap) done; waiting on SITE PR #1 merge to measure combined effect.",
+    "Owner to confirm: 'taboola 6 sessions' in Clarity is NOT Google Ads — is an external Taboola/native campaign running?"
   ],
   "note": "Só o agente de Google Ads escreve este arquivo."
 }
