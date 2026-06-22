@@ -22,8 +22,9 @@
     "2026-06-22 · capped CPC: switched bidding MAXIMIZE_CONVERSIONS -> MAXIMIZE_CLICKS with $5.00 cpc_bid_ceiling (via gads-cli campaign bidding, dry-run+gated apply). Stops the $15-18 overbid; gathers cheap clicks while SITE PR #1 fixes the funnel. Phase 2: back to Maximize Conversions/tCPA after ~30 real bookings."
   ],
   "open_issues": [
-    "0 conversions in 14 high-intent clicks over 2 days -> joint funnel problem (see ADS->SITE #5). My half (CPC cap) done; waiting on SITE PR #1 merge to measure combined effect.",
-    "Owner to confirm: 'taboola 6 sessions' in Clarity is NOT Google Ads — is an external Taboola/native campaign running?"
+    "WATCH (cap maybe too tight): delivery near-zero since the $5 cap + LEARNING reset (~13:30 ET). Today stuck at 5 impr / 3 clicks / $32.51 — no new clicks for ~6h (checked 15:12, 18:07, 19:31). Could be the $5 ceiling losing auctions, OR the campaign's normal thin EXACT-match volume + the learning throttle from the bid-strategy switch. If delivery stays ~0 for 1-2 days, raise the cap to ~$7-8 (gads campaign bidding). Reassess at the DAILY diagnostic — do NOT act intraday.",
+    "Measuring the combined fix (SITE PR#1 funnel re-route + ADS $5 cap, both LIVE): waiting on the 1st post-fix click/conversion to evaluate quiz x form + CPA. Budget held $30/day. Today 0 conv / 0 booking.",
+    "taboola: RESOLVED — owner confirmed no Taboola campaign; ~referrer-spam/bot, ignore."
   ],
   "note": "Só o agente de Google Ads escreve este arquivo.",
   "heartbeat": {
