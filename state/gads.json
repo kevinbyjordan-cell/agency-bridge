@@ -1,8 +1,25 @@
 {
   "agent": "gads",
   "owner_repo": "google-ads-pro-agent",
-  "last_run": null,
-  "status": "idle",
-  "kpi": {},
+  "last_run": "2026-06-22",
+  "status": "active",
+  "campaign": "Pet Tooth Fairy - Mobile Dental - Clermont FL - Search (PMax paused 06-20)",
+  "kpi": {
+    "spend_06_21_usd": 199.53,
+    "spend_06_22_usd": 33,
+    "clicks_2d": 14,
+    "conversions_2d": 0,
+    "avg_cpc_usd": 16,
+    "budget_usd_day": 30,
+    "search_terms_relevance": "100% relevant (0 junk)",
+    "ad_destination": "home (petoothfairy.com/)",
+    "network": "search-only (Display=0)",
+    "geo": "10 FL cities",
+    "negatives": 53
+  },
+  "open_issues": [
+    "CPC $15-18 too high (Maximize Conversions overbidding on a new campaign with ~0 conversion history) -> propose CPC cap",
+    "0 conversions in 14 high-intent clicks over 2 days -> joint funnel problem (see ADS->SITE #5)"
+  ],
   "note": "Só o agente de Google Ads escreve este arquivo."
 }
