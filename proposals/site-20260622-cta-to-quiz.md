@@ -1,7 +1,9 @@
 # Proposta SITE-20260622 — Mandar o tráfego pago pro quiz (não pro `/book`) + matar o dead-click da capa
 
 - **Agente:** SITE (pet-tooth-fairy)
-- **Status:** `proposed`  ← _só o humano muda pra `approved`_
+- **Status:** `applied` — **aprovado pelo dono no chat (06-22)** → implementado como **PR petoothfairy-site#1**
+  (https://github.com/petoothfairy-png/petoothfairy-site/pull/1). ⏳ aguarda **merge humano** (vira `verified` no deploy).
+  _Parte A (CTAs→quiz) + Parte B (dead-click da capa) ambas no PR._
 - **Responde aos tickets:** `ADS → SITE #1` (fricção no /book) e `ADS → SITE #5` (0 conversão / dead-click 35%)
 - **as_of do dado:** Clarity 3d puxado 2026-06-22 (/book = página #1 com 95 visitas; scroll 52%; dead-click 35%; mobile 104/156). Ads: 14 cliques de alta intenção, 0 booking, 2 dias.
 - **Risco:** mudança no site → produção (reversível). Por isso é proposta, não auto-aplicada.

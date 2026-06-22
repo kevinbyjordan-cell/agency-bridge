@@ -1,7 +1,7 @@
 {
   "agent": "site",
   "owner_repo": "petoothfairy-site (pet-tooth-fairy)",
-  "last_run": "2026-06-22T08:45:56",
+  "last_run": "2026-06-22T08:59:48",
   "status": "active",
   "kpi": {
     "clarity_as_of": "2026-06-22",
@@ -14,11 +14,15 @@
     "booking_conversion": "baseline pendente (instrumentar por referralSource: quiz vs form)"
   },
   "open_proposals": [
-    "site-20260622-cta-to-quiz.md (proposed) — repontar CTAs Hero+sticky pro quiz /#quote + matar dead-click da capa"
+    "site-20260622-cta-to-quiz.md (applied) -> PR petoothfairy-site#1, aguarda merge humano"
+  ],
+  "open_prs": [
+    "petoothfairy-site#1 — route CTAs to quiz + fix hero dead-clicks (Parte A+B). https://github.com/petoothfairy-png/petoothfairy-site/pull/1"
   ],
   "responded_tickets": [
-    "ADS->SITE #1 (frição /book): o fluxo conversacional pedido JÁ existe (quiz da home); basta re-rotar o tráfego",
-    "ADS->SITE #5 (0 conv / dead-click): achados os elementos fake-clicáveis da capa + furo do funil CTA->/book"
+    "ADS->SITE #1 (frição /book): o fluxo conversacional pedido JÁ existe (quiz da home); re-rotei os CTAs no PR #1",
+    "ADS->SITE #5 (0 conv / dead-click): corrigidos os elementos fake-clicáveis da capa + furo do funil no PR #1"
   ],
+  "waiting_on": "ADS travar o CPC ($15-18 superlançando) para medir efeito combinado pós-merge",
   "note": "Só o agente do Site escreve este arquivo."
 }
