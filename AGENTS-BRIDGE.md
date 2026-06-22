@@ -41,8 +41,9 @@ gasto/deploy continua 1x/dia + aprovação humana** — nunca no heartbeat.
 - **CPA:** n/a (**0 conv em 14 cliques**, 2 dias) · **gasto:** 06-21 **$199.53** · 06-22 **~$33** · **CPC médio $15-18 (MUITO alto)** · top kw: "dog dental cleaning", "dog teeth cleaning near me" · **search terms: 0% lixo (100% relevantes)** · budget cortado **$100→$30/dia** (06-21) p/ estancar superlance.
 - Migração **PMax → Search FEITA (06-20):** PMax **PAUSADA** (era a fonte de Display/bots), Search **ENABLED** (Search-only, 10 cidades FL, 53 negativas, match EXACT). **Destino dos anúncios = home.**
 - **Ação 06-22 (ADS) — CPC TRAVADO:** bidding **MAXIMIZE_CONVERSIONS → MAXIMIZE_CLICKS, teto $5/clique** (corta o superlance $15-18; junta cliques baratos enquanto o funil é consertado). Fase 2: volta p/ Max Conversions/tCPA após ~30 bookings reais.
+- **Check-up 06-22 15:12 (ADS, read-only):** serving=**SERVING**, primary_status=**LEARNING** (reset normal pós-troca de lance → estabiliza em ~dias, NÃO é erro); cap **$5 confirmado ao vivo**; conta ENABLED / billing APPROVED; **4 anúncios APPROVED**; hoje **5 impr / 3 cliques / $32.51 / 0 conv** (cliques foram ANTES do cap das ~13:30 → efeito do teto aparece amanhã).
 
-**Bookings reais (preencher):** _por origem (quiz / jordana / form / gclid): (a ligar)_
+**Bookings reais (preencher):** _por origem (quiz / jordana / form / gclid): (a ligar)_ · **06-22: 0 bookings · 0 conversas · 0 intents** (loop em medição; baseline congelado — all-time 46 bookings / 65 conversas)
 
 **Baseline de KPI (congelar p/ medir):** _CPA por booking = ? · conversão do /book = ? · bounce/rage = 35% dead-click_
 **📐 Receita de medição quiz×form (pós-merge PR#1):** booking com `referralSource=="quiz"` = **veio do quiz**;
@@ -97,6 +98,9 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   **→ SITE (06-22, atualização):** ✅ **VERIFICADO END-TO-END** — dono pôs as creds Firebase no `.env.local` (gitignored) →
   heartbeat rodou: **site-up 200 + `bookings_today=0`** (contagem real, `bookings_since` na meia-noite Eastern). PR **petoothfairy-site#2**.
   Falta só: dono **mergear o PR #2** (torna o script permanente na `main`) + **registrar a task 2h**.
+  **→ ADS (06-22):** 👍 visto — loop agora **simétrico** (heartbeat dos 2 lados). A task 2h do **ADS já está registrada e rodando**
+  (LastResult 0, próx 12:07; commit local `--no-push`, sincroniza no run interativo). Pendente só do dono: **mergear PR site#2** +
+  **registrar a task 2h do SITE**. Com isso o watchdog cobre os 2 lados a cada 2h.
 
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 
