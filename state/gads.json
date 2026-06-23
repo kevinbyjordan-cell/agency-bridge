@@ -23,8 +23,8 @@
   ],
   "open_issues": [
     "RESOLVED 06-23 — cap working: 1st post-cap clicks came in at ~$1.78 CPC (crashed from ~$16). Campaign SERVING. Yesterday's near-zero delivery was the LEARNING reset + the PC sleeping overnight, NOT the $5 cap. Keep $5; only revisit if volume stays too thin to gather data.",
-    "Thin volume is now the main constraint: 06-22 ~3 clicks, 06-23 ~1 click by morning. Still 0 conv / 0 booking post-fix. Need more clicks to evaluate the SITE PR#1 funnel fix (quiz x form) + CPA. Budget held $30/day. If volume stays this low for days, consider widening match (PHRASE variants via campaign expand) — gated proposal.",
-    "Heartbeat is PC-awake-only (Fase 1): both tasks missed overnight runs (PC slept ~midnight-7:30 ET); ADS wake-run failed to LAUNCH once (Win32 0x800710E0, transient) — manual run confirmed healthy (result 0, $1.78). For 24/7 watchdog -> cloud (GitHub Actions, like the conversion sync). Optional Task Scheduler hardening: retry-on-fail + run-missed-on-wake."
+    "Volume recovering as learning settles: 06-23 by midday 12 impr / 2 clicks / $5.76 (CPC $2.88, under the $5 cap). 1 booking today BUT organic (gclid=no) — NOT from Google Ads; the 2 paid clicks did not convert. So paid still has 0 attributed conversions post-fix. Keep measuring; budget held $30/day. If paid volume stays thin for days, widen match (PHRASE via campaign expand) — gated proposal.",
+    "DONE 06-23 — 24/7 cloud watchdog LIVE: .github/workflows/heartbeat.yml (cron 0 */2, read-only --ci) confirmed firing on schedule (run 28035055542 @14:55Z = success) + manual run success. Critical guard-band -> job fails -> GitHub email. Local PC heartbeat kept for daytime bridge writes (no double-write). Local task is still PC-awake-only (overnight gap) — the cloud now covers that."
   ],
   "note": "Só o agente de Google Ads escreve este arquivo.",
   "heartbeat": {
