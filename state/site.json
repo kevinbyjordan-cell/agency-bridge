@@ -32,12 +32,12 @@
   ],
   "note": "Só o agente do Site escreve este arquivo.",
   "heartbeat": {
-    "at": "2026-06-23T17:34:09.594Z",
+    "at": "2026-06-23T19:34:09.636Z",
     "site_url": "https://petoothfairy.com",
     "site_up": true,
     "http_status": 200,
     "bookings_today": 1,
-    "bookings_since": "2026-06-23T04:00:00.172Z",
+    "bookings_since": "2026-06-23T04:00:00.190Z",
     "bookings_check": "ok",
     "ok": true,
     "alerts": []
