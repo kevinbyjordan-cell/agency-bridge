@@ -22,9 +22,9 @@
     "2026-06-22 · capped CPC: switched bidding MAXIMIZE_CONVERSIONS -> MAXIMIZE_CLICKS with $5.00 cpc_bid_ceiling (via gads-cli campaign bidding, dry-run+gated apply). Stops the $15-18 overbid; gathers cheap clicks while SITE PR #1 fixes the funnel. Phase 2: back to Maximize Conversions/tCPA after ~30 real bookings."
   ],
   "open_issues": [
-    "WATCH (cap maybe too tight): delivery near-zero since the $5 cap + LEARNING reset (~13:30 ET). Today stuck at 5 impr / 3 clicks / $32.51 — no new clicks for ~6h (checked 15:12, 18:07, 19:31). Could be the $5 ceiling losing auctions, OR the campaign's normal thin EXACT-match volume + the learning throttle from the bid-strategy switch. If delivery stays ~0 for 1-2 days, raise the cap to ~$7-8 (gads campaign bidding). Reassess at the DAILY diagnostic — do NOT act intraday.",
-    "Measuring the combined fix (SITE PR#1 funnel re-route + ADS $5 cap, both LIVE): waiting on the 1st post-fix click/conversion to evaluate quiz x form + CPA. Budget held $30/day. Today 0 conv / 0 booking.",
-    "taboola: RESOLVED — owner confirmed no Taboola campaign; ~referrer-spam/bot, ignore."
+    "RESOLVED 06-23 — cap working: 1st post-cap clicks came in at ~$1.78 CPC (crashed from ~$16). Campaign SERVING. Yesterday's near-zero delivery was the LEARNING reset + the PC sleeping overnight, NOT the $5 cap. Keep $5; only revisit if volume stays too thin to gather data.",
+    "Thin volume is now the main constraint: 06-22 ~3 clicks, 06-23 ~1 click by morning. Still 0 conv / 0 booking post-fix. Need more clicks to evaluate the SITE PR#1 funnel fix (quiz x form) + CPA. Budget held $30/day. If volume stays this low for days, consider widening match (PHRASE variants via campaign expand) — gated proposal.",
+    "Heartbeat is PC-awake-only (Fase 1): both tasks missed overnight runs (PC slept ~midnight-7:30 ET); ADS wake-run failed to LAUNCH once (Win32 0x800710E0, transient) — manual run confirmed healthy (result 0, $1.78). For 24/7 watchdog -> cloud (GitHub Actions, like the conversion sync). Optional Task Scheduler hardening: retry-on-fail + run-missed-on-wake."
   ],
   "note": "Só o agente de Google Ads escreve este arquivo.",
   "heartbeat": {
