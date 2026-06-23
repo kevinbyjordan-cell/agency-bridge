@@ -2,34 +2,38 @@
   "agent": "fbads",
   "owner_repo": "FB-META-ADS (github.com/kevinbyjordan-cell/FB-META-ADS)",
   "last_run": "2026-06-22",
-  "status": "campaign-built-paused",
-  "participa_do_bridge": false,
-  "campaign": "PTF | Leads | Anesthesia-Free $40 | FL Orlando+Tampa | 2026-06 (PAUSED, aguardando ativação humana)",
+  "status": "active",
+  "participa_do_bridge": true,
+  "campaign": "PTF | Leads | Anesthesia-Free $40 | FL Orlando+Tampa | 2026-06 (ACTIVE; anúncios em revisão do Meta, servem após aprovação)",
   "kpi": {
     "spend_brl_day": 0,
     "leads": 0,
     "cpl_brl": 0,
-    "objective": "OUTCOME_LEADS / OFFSITE_CONVERSIONS (Lead, pixel+CAPI)",
+    "objective": "OUTCOME_LEADS / OFFSITE_CONVERSIONS (Lead, pixel 1639947130497632 + CAPI)",
     "bid_strategy": "LOWEST_COST_WITHOUT_CAP (Highest volume)",
     "budget_brl_day": 30,
     "placements": "Advantage+ (FB + IG)",
     "geo": "Orlando metro + Tampa Bay (custom 40mi), age 30-65, Advantage+ audience",
-    "creative_test": "AD001/AD002 (imagem) + AD003/AD004 (vídeo Reel) — 4 anúncios PAUSED"
+    "creative_test": "AD001/AD002 (imagem) + AD003/AD004 (vídeo Reel) — 4 anúncios ACTIVE"
   },
   "actions_taken": [
     "2026-06-22 · agente Meta Ads criado (playbook + CLAUDE.md + skills meta-ads-*); registrado no bridge",
     "2026-06-22 · Fase 1+2 concluídas (playbook + 4 skills + setup).",
-    "2026-06-22 · 1ª campanha criada PAUSED (campaign 120245971416320157, 4 anúncios) na conta BRL 26275930805377194, targeting US/FL. Aguardando ativação humana."
+    "2026-06-22 · 1ª campanha criada PAUSED (campaign 120245971416320157, 4 anúncios) na conta BRL 26275930805377194, targeting US/FL.",
+    "2026-06-22 · campanha ATIVADA pelo humano (6 entidades ACTIVE). Entrada formal no bridge. Check diário 09h agendado."
   ],
   "open_issues": [],
   "open_tickets_in": [],
+  "open_tickets_out": [
+    "FB→SITE: Meta Ads agora manda tráfego para petoothfairy.com/?offer=neighbor (abre o popup de $40). NÃO mude esse destino/popup nem o evento Lead (fbq + CAPI) sem avisar — é a conversão da campanha."
+  ],
   "heartbeat": {
     "at": "2026-06-22T00:00:00Z",
     "spend_today_brl": 0,
     "results_today": 0,
-    "serving_status": "NOT_SERVING",
+    "serving_status": "ACTIVE_IN_REVIEW",
     "ok": true,
     "alerts": []
   },
-  "note": "1ª campanha CRIADA mas PAUSED (não serve, não gasta). NÃO rotear tickets ainda. Entrada formal no bridge (participa_do_bridge=true + heartbeat + tickets) quando o humano ATIVAR a campanha. Execução via MCP oficial mcp.facebook.com/ads."
+  "note": "1ª campanha ATIVA (anúncios em revisão do Meta; servem após aprovação ~30min). Agente PARTICIPA do bridge agora. Autônomo (reversível): pausar criativo desperdiçando, baixar budget, relatórios. Gated (proposta→humano): aumentar budget, escalar público, REMOVE. Check diário read-only 09h. Execução via MCP oficial mcp.facebook.com/ads."
 }
