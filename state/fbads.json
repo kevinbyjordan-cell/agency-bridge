@@ -1,39 +1,51 @@
 {
   "agent": "fbads",
   "owner_repo": "FB-META-ADS (github.com/kevinbyjordan-cell/FB-META-ADS)",
-  "last_run": "2026-06-22",
+  "last_run": "2026-06-26",
   "status": "active",
   "participa_do_bridge": true,
-  "campaign": "PTF | Leads | Anesthesia-Free $40 | FL Orlando+Tampa | 2026-06 (ACTIVE; anúncios em revisão do Meta, servem após aprovação)",
+  "campaign": "1 campanha ATIVA: PTF Instant Form $40 (R$25/dia, LEAD_GENERATION formulário nativo) — 2 leads no 1º dia, CPL R$15,58. A campanha Website Lead foi PAUSADA (R$84 gastos, 0 leads, cold-start não rompeu).",
   "kpi": {
-    "spend_brl_day": 0,
-    "leads": 0,
-    "cpl_brl": 0,
-    "objective": "OUTCOME_LEADS / OFFSITE_CONVERSIONS (Lead, pixel 1639947130497632 + CAPI)",
-    "bid_strategy": "LOWEST_COST_WITHOUT_CAP (Highest volume)",
-    "budget_brl_day": 30,
-    "placements": "Advantage+ (FB + IG)",
-    "geo": "Orlando metro + Tampa Bay (custom 40mi), age 30-65, Advantage+ audience",
-    "creative_test": "AD001/AD002 (imagem) + AD003/AD004 (vídeo Reel) — 4 anúncios ACTIVE"
+    "instant_form_ACTIVE": {
+      "spend_brl": 31.16,
+      "leads": 2,
+      "cpl_brl": 15.58,
+      "ctr_pct": 8.42,
+      "budget_brl_day": 25,
+      "objective": "OUTCOME_LEADS / LEAD_GENERATION (form 1016290510981216)",
+      "geo": "Orlando + Tampa (custom 40mi), Advantage+, FB+IG",
+      "creative_winners": "AD001 imagem (1 lead R$9,85) + AD004 vídeo (1 lead R$12,21). AD002/AD003 ainda sem lead (mal entregaram).",
+      "status": "ACTIVE — escalada R$15→R$25/dia aprovada pelo dono em 2026-06-26."
+    },
+    "website_lead_PAUSED": {
+      "spend_brl": 84.07,
+      "leads": 0,
+      "ctr_pct": 3.47,
+      "budget_brl_day": 30,
+      "objective": "OUTCOME_LEADS / OFFSITE_CONVERSIONS (Lead pixel 1639947130497632 + CAPI)",
+      "status": "PAUSED 2026-06-26 (cold-start: 0 leads após R$84). Reversível."
+    }
   },
   "actions_taken": [
-    "2026-06-22 · agente Meta Ads criado (playbook + CLAUDE.md + skills meta-ads-*); registrado no bridge",
-    "2026-06-22 · Fase 1+2 concluídas (playbook + 4 skills + setup).",
-    "2026-06-22 · 1ª campanha criada PAUSED (campaign 120245971416320157, 4 anúncios) na conta BRL 26275930805377194, targeting US/FL.",
-    "2026-06-22 · campanha ATIVADA pelo humano (6 entidades ACTIVE). Entrada formal no bridge. Check diário 09h agendado."
+    "2026-06-22 · agente Meta Ads criado; 1ª campanha (Website Lead) criada e ATIVADA. Check diário 09h.",
+    "2026-06-25 · 2ª campanha INSTANT FORM (LEAD_GENERATION, form nativo 1016290510981216, 4 anúncios) criada via Ads Manager e ATIVADA pelo dono. (MCP não cria lead ads desta Página: token degradado, erro 1815089.)",
+    "2026-06-26 · OTIMIZAÇÃO: form trouxe 2 leads (CPL R$15,58) vs website 0 leads (R$84). PAUSEI o website e ESCALEI o form R$15→R$25/dia (aumento aprovado explicitamente pelo dono). Ver decisions/fb-20260626T084632-77992.md."
   ],
-  "open_issues": [],
+  "open_issues": [
+    "MCP oficial NÃO cria lead ads p/ a Página 1044530608733379 (leadgen_tos_accepted=false + page_name '(unknown)', erro 1815089), apesar do ToS aceito no business. Lead ads desta Página = via Ads Manager.",
+    "Follow-up dos leads: por ora MANUAL via Meta Lead Center. Automação SMS (Make+Twilio) em construção — Fase 1 (conta Twilio) parada aguardando o dono criar a conta."
+  ],
   "open_tickets_in": [],
   "open_tickets_out": [
-    "FB→SITE: Meta Ads agora manda tráfego para petoothfairy.com/?offer=neighbor (abre o popup de $40). NÃO mude esse destino/popup nem o evento Lead (fbq + CAPI) sem avisar — é a conversão da campanha."
+    "FB→SITE (info): a campanha ativa agora é FORMULÁRIO NATIVO do Meta (não manda pro site no envio). O popup $40 do site segue valendo p/ tráfego orgânico/outras fontes, mas o Meta Ads não está mais apontando pra lá (campanha website pausada). Sem ação necessária no site."
   ],
   "heartbeat": {
-    "at": "2026-06-22T00:00:00Z",
-    "spend_today_brl": 0,
-    "results_today": 0,
-    "serving_status": "ACTIVE_IN_REVIEW",
+    "at": "2026-06-26T08:46:00Z",
+    "spend_today_brl": null,
+    "results_total": 2,
+    "serving_status": "CAMP_WEBSITE_PAUSED / CAMP_FORM_ACTIVE_R25",
     "ok": true,
-    "alerts": []
+    "alerts": ["Form com 2 leads dia 1 (CPL R$15,58) — escalado p/ R$25/dia. Monitorar CPL com mais leads; escalar +20-30% se segurar. Cap mensal R$900 folgado a R$25/dia."]
   },
-  "note": "1ª campanha ATIVA (anúncios em revisão do Meta; servem após aprovação ~30min). Agente PARTICIPA do bridge agora. Autônomo (reversível): pausar criativo desperdiçando, baixar budget, relatórios. Gated (proposta→humano): aumentar budget, escalar público, REMOVE. Check diário read-only 09h. Execução via MCP oficial mcp.facebook.com/ads."
+  "note": "Autônomo (reversível): pausar criativo/campanha desperdiçando, baixar budget, relatórios. Gated (humano aprova): AUMENTAR budget (feito hoje c/ aprovação), ativar campanha, escalar público, REMOVE. Execução: MCP oficial p/ tudo MENOS lead ads desta Página (Ads Manager). Check diário read-only."
 }
