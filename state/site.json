@@ -32,15 +32,21 @@
   ],
   "note": "Só o agente do Site escreve este arquivo.",
   "heartbeat": {
-    "at": "2026-06-26T19:34:13.139Z",
+    "at": "2026-06-26T21:34:26.271Z",
     "site_url": "https://petoothfairy.com",
-    "site_up": true,
-    "http_status": 200,
+    "site_up": false,
+    "http_status": 0,
     "bookings_today": 0,
-    "bookings_since": "2026-06-26T04:00:00.695Z",
+    "bookings_since": "2026-06-26T04:00:00.858Z",
     "bookings_check": "ok",
     "mail_auth": "ok",
-    "ok": true,
-    "alerts": []
+    "ok": false,
+    "alerts": [
+      {
+        "level": "critical",
+        "kind": "site_down",
+        "msg": "https://petoothfairy.com returned 0 (This operation was aborted)"
+      }
+    ]
   }
 }
