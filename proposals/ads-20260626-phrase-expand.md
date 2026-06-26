@@ -2,7 +2,7 @@
 
 - **agent:** ADS (Google Ads)
 - **date:** 2026-06-26
-- **status:** `proposed`  ← human-only flips to `approved` (I never apply this myself without an explicit OK)
+- **status:** `applied`  ← APPROVED by owner 2026-06-26 ("pode aplicar") → applied same day
 - **campaign:** Pet Tooth Fairy - Mobile Dental - Clermont FL - Search (`customers/7493280264/campaigns/23960290486`)
 - **plan file:** `GOOGLE ADS PRO/clients/pet-tooth-fairy/ads/expand/phrase-expand.json`
 
@@ -37,5 +37,7 @@ Dry-run validated live: **18 mutate ops, created NOTHING**.
 Pause (or remove) the 2 new ad groups via `campaign set-status` / the UI. EXACT keywords are untouched.
 
 ## Decision
-- [ ] approved by owner → ADS applies + reports the new reach/clicks/CPC over the next days
-- [ ] rejected / changes requested
+- [x] **APPROVED by owner (2026-06-26) → APPLIED** — 18 ops: 2 ad groups + 14 PHRASE kw + 2 RSAs created ENABLED
+  (verified live: "Dog Dental — Phrase" + "Cat Dental — Phrase" ENABLED; campaign now 6 ad groups). New RSAs in
+  REVIEW_IN_PROGRESS → the PHRASE keywords start serving once their ad is approved (~hours). EXACT untouched.
+  Next: monitor reach/clicks/CPC; mine new search terms in a few days and add negatives for any junk.

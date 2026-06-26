@@ -19,11 +19,12 @@
     "negatives": 53
   },
   "actions_taken": [
-    "2026-06-22 · capped CPC: switched bidding MAXIMIZE_CONVERSIONS -> MAXIMIZE_CLICKS with $5.00 cpc_bid_ceiling (via gads-cli campaign bidding, dry-run+gated apply). Stops the $15-18 overbid; gathers cheap clicks while SITE PR #1 fixes the funnel. Phase 2: back to Maximize Conversions/tCPA after ~30 real bookings."
+    "2026-06-22 · capped CPC: switched bidding MAXIMIZE_CONVERSIONS -> MAXIMIZE_CLICKS with $5.00 cpc_bid_ceiling (via gads-cli campaign bidding, dry-run+gated apply). Stops the $15-18 overbid; gathers cheap clicks while SITE PR #1 fixes the funnel. Phase 2: back to Maximize Conversions/tCPA after ~30 real bookings.",
+    "2026-06-26 · PHRASE expansion (gated, owner-approved): campaign expand added 2 ad groups (Dog Dental — Phrase 10 kw + Cat Dental — Phrase 4 kw + 1 RSA each) to widen reach beyond the EXACT-dominated set. 18 ops, verified ENABLED (campaign now 6 ad groups); new RSAs in review. Spend-neutral (shared $30 budget unchanged). See proposals/ads-20260626-phrase-expand.md."
   ],
   "open_issues": [
     "RESOLVED 06-23 — cap working: 1st post-cap clicks came in at ~$1.78 CPC (crashed from ~$16). Campaign SERVING. Yesterday's near-zero delivery was the LEARNING reset + the PC sleeping overnight, NOT the $5 cap. Keep $5; only revisit if volume stays too thin to gather data.",
-    "Volume recovering as learning settles: 06-23 by midday 12 impr / 2 clicks / $5.76 (CPC $2.88, under the $5 cap). 1 booking today BUT organic (gclid=no) — NOT from Google Ads; the 2 paid clicks did not convert. So paid still has 0 attributed conversions post-fix. Keep measuring; budget held $30/day. If paid volume stays thin for days, widen match (PHRASE via campaign expand) — gated proposal.",
+    "Thin paid volume (~2 clicks/day, ~4 days) + 0 confirmed paid conversions -> ADDRESSED 06-26 with the owner-approved PHRASE expansion (above). Bookings still arrive ~1/day but organic (gclid=no). Watch over next days: did PHRASE lift paid clicks once the new ads clear review? Then mine search terms + add negatives. Budget held $30/day; $5 cap holds (spend-neutral).",
     "DONE 06-23 — 24/7 cloud watchdog LIVE: .github/workflows/heartbeat.yml (cron 0 */2, read-only --ci) confirmed firing on schedule (run 28035055542 @14:55Z = success) + manual run success. Critical guard-band -> job fails -> GitHub email. Local PC heartbeat kept for daytime bridge writes (no double-write). Local task is still PC-awake-only (overnight gap) — the cloud now covers that."
   ],
   "note": "Só o agente de Google Ads escreve este arquivo.",
