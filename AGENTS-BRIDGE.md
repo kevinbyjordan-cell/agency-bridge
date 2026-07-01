@@ -110,6 +110,27 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   **task `PTF-Bridge-Heartbeat` registrada** pelo dono, **1ª execução OK (LastTaskResult=0)**, próxima ~13:34; heartbeat ao vivo agora
   = site-up 200 / bookings_today 0 / sem alertas. **Watchdog 2h rodando dos 2 lados.** Loop 100% no ar em modo medição.
 
+- [ ] **#7 — Cliques mobile reais não fecham booking: diagnóstico de conversão (ultra-busca multi-agente 06-30).** _do agente de Ads_
+  **Dados ADS (fecham as desculpas fáceis):** tráfego é BOM — 78 cliques/14d, só **7% bot** (normal, filtrado pelo Google), **91% MOBILE**,
+  CTR **12%**, CPC $3,7, search terms de alta intenção (inclusive de **PREÇO**: "affordable", "how much for dog teeth cleaning"). Converteu
+  ~5% (4 bookings, todos mobile, 06-23/24) e **secou ~6 dias**. Descartado: bot, lance, velocidade (SSR pinta tudo), preço-caro (PTF é o **mais
+  barato**: $169 vs concorrentes $179-349), e **callback-leak** (0 booking-intents recentes → ninguém nem começa a reserva).
+  **Já feito — confirmei AO VIVO, NÃO refazer:** hero CTA já aponta pro quiz `#quote` ✅ · tap-to-call já no header (`tel:`) ✅.
+  **Matadores REAIS de conversão (prioridade conjunta — todos [SITE], via PR):**
+  1. **Preço "from $169" = bait-bounce (maior alavanca).** Hero diz "Flat rate **from** $169" mas o quiz revela **$219 (cão 50-100lb) / $249 (XL)**.
+     Comprador de cão grande clica esperando $169, vê +30-48% no meio do quiz, e sai. **Fix:** escada honesta ACIMA DA DOBRA ("$169 gatos & cães
+     pequenos · até $249 grandes — flat, sem taxa, $0 hoje"); matar o "from" pelado.
+  2. **Dúvida de segurança/eficácia sem-anestesia não é desarmada (melhor fix pro "seco").** O cético sai pro Google, acha AVMA/AVDC dizendo que é
+     inseguro/ineficaz, não volta. Site afirma "seguro" mas **sem nomear supervisão vet, sem garantia, sem responder "funciona vs. com anestesia? e se
+     precisar extração?"**. Concorrentes desarmam (citam AVDC/AVMA, "95% tártaro removido" antes/depois, screening). **Fix:** bloco segurança/eficácia/
+     candidatura perto do quiz (vet nomeado ou "protocolo vet-revisado", escopo honesto, "se precisar extração → indicamos").
+  3. **Garantia (risk-reversal) perto do CTA** — concorrente: "se não limparmos, você não paga". Parear com "$0 due today".
+  4. **Prova/urgência acima da dobra:** antes/depois de tártaro c/ claim de resultado; 5.0 + nº reviews + "10+ anos" + pets atendidos no hero; vaga real
+     ("essa semana — X vagas"); âncora "$169 vs $300-700 no vet, com anestesia + recuperação".
+  5. Enxugar o **/book** (path secundário) pro mínimo (nome + telefone; email opcional).
+  **ADS (meu lado, read-only):** confirmar skew de cão-grande/"how much" nos search terms do período seco; alinhar copy do anúncio com a escada de
+  preço; medir CPA-por-booking depois dos fixes 1+2. **Ordem sugerida:** fixes **1 e 2 primeiro** (horas), depois 3 e 4.
+
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 
 - [x] **#2 — 38% bots** · O Clarity mostra ~38% das sessões como bot. Revisar **rede de parceiros/Display,
