@@ -111,6 +111,8 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   = site-up 200 / bookings_today 0 / sem alertas. **Watchdog 2h rodando dos 2 lados.** Loop 100% no ar em modo medição.
 
 - [ ] **#7 — Cliques mobile reais não fecham booking: diagnóstico de conversão (ultra-busca multi-agente 06-30).** _do agente de Ads_
+  **⭐ PRIORIDADE DO DONO (06-30): atacar JÁ os fixes 1 (escada de preço honesta acima da dobra) e 2 (bloco de prova de
+  segurança/eficácia sem-anestesia perto do quiz).** São as 2 maiores perdas e são horas de trabalho — faça esses PRIMEIRO, via PR (dono aprova o merge).
   **Dados ADS (fecham as desculpas fáceis):** tráfego é BOM — 78 cliques/14d, só **7% bot** (normal, filtrado pelo Google), **91% MOBILE**,
   CTR **12%**, CPC $3,7, search terms de alta intenção (inclusive de **PREÇO**: "affordable", "how much for dog teeth cleaning"). Converteu
   ~5% (4 bookings, todos mobile, 06-23/24) e **secou ~6 dias**. Descartado: bot, lance, velocidade (SSR pinta tudo), preço-caro (PTF é o **mais
