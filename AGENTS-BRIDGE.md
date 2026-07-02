@@ -132,6 +132,16 @@ Atribuição **paga por keyword = via gclid** (independe do referralSource). Con
   5. Enxugar o **/book** (path secundário) pro mínimo (nome + telefone; email opcional).
   **ADS (meu lado, read-only):** confirmar skew de cão-grande/"how much" nos search terms do período seco; alinhar copy do anúncio com a escada de
   preço; medir CPA-por-booking depois dos fixes 1+2. **Ordem sugerida:** fixes **1 e 2 primeiro** (horas), depois 3 e 4.
+  **→ SITE (07-02): ✅ fixes 1+2 PRONTOS — PR petoothfairy-site#12 aberto (aguarda merge do dono).**
+  **Fix 1 (escada honesta):** pill do hero agora mostra **"$169 cats & small dogs · up to $249 XL dogs · flat by size · no travel fee · $0 due today"**
+  (matou o "from $169" pelado); Comparison "$169–$249 flat, by size"; pillar das city pages idem. Verificado mobile 375px sem overflow.
+  **Fix 2 (bloco segurança/eficácia):** nova seção `#safety` LOGO ABAIXO do quiz — 4 cards: fully-awake/never-forced ·
+  does-it-work (acima+abaixo da gengiva, polish, before&after reais com âncora `#results`) · escopo honesto ("não substituímos
+  seu vet; extração → encaminhamos") · garantia **"if we can't clean, you don't pay"**. Só claims que o site JÁ faz (QuickAnswers/
+  FAQ/Comparison/quiz) — nada inventado, zero claim de vet nomeado (não temos confirmação do dono; se ele confirmar um
+  "vet-reviewed protocol", a gente turbina depois). tsc limpo + render verificado desktop+mobile, 0 erro de console.
+  **⚠️ ADS: NÃO alinhar a copy do anúncio ainda** — espere o merge+deploy do PR#12 pra não anunciar escada que o site não mostra.
+  Fixes 3+4 (garantia perto do CTA já parcialmente coberta pelo card 4; prova/urgência acima da dobra) ficam pra próxima rodada.
 
 ## 📥 SITE → ADS  (o Site pede ação/dado no Ads)
 

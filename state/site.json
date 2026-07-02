@@ -1,8 +1,8 @@
 {
   "agent": "site",
   "owner_repo": "petoothfairy-site (pet-tooth-fairy)",
-  "last_run": "2026-06-22T14:25:14Z",
-  "status": "measuring",
+  "last_run": "2026-07-02T16:57:49Z",
+  "status": "ticket7-fixes-in-pr",
   "kpi": {
     "clarity_as_of": "2026-06-22",
     "sessions_3d": 156,
@@ -16,7 +16,9 @@
   "shipped": [
     "PR petoothfairy-site#1 MERGEADO (squash 999627f): re-rota CTAs Hero+sticky pro quiz (#quote) + mata dead-click da capa. Confirmado AO VIVO em prod (Hero CTA -> #quote).",
     "CLARITY_DATA_EXPORT_TOKEN configurado na Netlify (dono) + redeploy prod (deploy 6a393f17, ready) -> aba Clarity do /admin le ao vivo.",
-    "scripts/bridge-heartbeat.mjs (ADS->SITE #6): heartbeat read-only 2h (site-up + bookings do dia). VERIFICADO end-to-end ao vivo (site-up 200 + bookings_today=0, creds Firebase no .env.local). PR petoothfairy-site#2."
+    "scripts/bridge-heartbeat.mjs (ADS->SITE #6): heartbeat read-only 2h (site-up + bookings do dia). VERIFICADO end-to-end ao vivo (site-up 200 + bookings_today=0, creds Firebase no .env.local). PR petoothfairy-site#2.",
+    "Fora do bridge (06-29..07-02): GMAIL_APP_PASSWORD consertado + mail_auth no heartbeat; e-mails de notificacao adicionados (smile-club, consent, stripe webhook); admin com toggle Contatado + cards amber/verde; Jordana sem travessao + no-obligation visit + notificacao de callback pro time (PRs #4-#11).",
+    "ADS->SITE #7 fixes 1+2 (07-02): PR petoothfairy-site#12 ABERTO (aguarda merge do dono) — escada de preco honesta no hero/Comparison/city-pages ($169 a $249 by size, matou o 'from $169' pelado) + secao SafetyProof #safety logo abaixo do quiz (fully-awake, does-it-work + ancora #results, escopo honesto, garantia if-we-can't-clean-you-don't-pay). tsc limpo, verificado desktop+mobile."
   ],
   "clarity_prod": "LIVE (token server-only setado; redeploy ready). Confirmacao visual final = dono abre /admin logado (endpoint admin-gated).",
   "heartbeat_note": "OPERACIONAL 06-22: site-up 200 + bookings_today=0 (creds Firebase no .env.local gitignored; Opcao A). PR#2 MERGEADO (90b7c07) -> script permanente na main. Task PTF-Bridge-Heartbeat REGISTRADA, 1a execucao OK (LastTaskResult=0), proxima ~13:34. Watchdog 2h rodando.",
@@ -24,9 +26,9 @@
   "open_proposals": [],
   "open_tickets_in": [
     "ADS->SITE #2 (taboola): pedido leve -> no proximo pull do Clarity, conferir se as 6 sessoes taboola estao bot-flagged + em que pagina cairam. NAO prioridade. Fica pra rodada diaria do Clarity.",
-    "ADS->SITE #6 (heartbeat): ✅ COMPLETO/operacional. PR petoothfairy-site#2 MERGEADO (90b7c07, script permanente na main); task PTF-Bridge-Heartbeat registrada + 1a execucao OK (result 0), proxima ~13:34; heartbeat 2h rodando dos 2 lados."
+    "ADS->SITE #7 (conversao mobile): fixes 1+2 PRONTOS em PR petoothfairy-site#12 (aguarda merge do dono). Fixes 3+4 (risk-reversal perto do CTA — parcialmente coberto pelo card de garantia do SafetyProof — e prova/urgencia acima da dobra) pra proxima rodada. Fix 5 (/book enxuto) depois."
   ],
-  "waiting_on": "1as conversoes pos-deploy para medir quiz x form + CPA; ADS mantem budget $30/dia e cap CPC $5 ate medir",
+  "waiting_on": "merge do PR#12 pelo dono -> deploy -> ADS alinha copy do anuncio com a escada de preco e mede CPA-por-booking pos-fixes",
   "next_suggestions": [
     "Jordana: mostrar o teaser mais cedo em paginas de anuncio (vira proposta se o dono quiser)"
   ],
